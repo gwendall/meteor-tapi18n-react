@@ -18,7 +18,7 @@ Drop the `<TAP />` component with a `label` (+ optionally `options`) parameter.
 JSX:
 ```javascript
 Meteor.startup(function() {
-  React.render(<TAP label="messages.welcome" options={ liked: 'React' }/>, document.body);
+  React.render(<TAP label="messages.welcome" options={{ liked: 'React' }}/>, document.body);
 });
 ```
 
