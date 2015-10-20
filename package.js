@@ -9,7 +9,7 @@ Package.onUse(function(api, where) {
   api.versionsFrom('1.2');
   api.use([
     'react@0.1.13',
-    'tap:i18n@1.6.1'
+    'tap:i18n@1.7.0'
   ]);
   api.addFiles('lib.jsx');
   api.export('TAP');

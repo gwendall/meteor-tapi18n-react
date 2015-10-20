@@ -13,20 +13,20 @@ meteor add gwendall:tapi18n-react
 How it works
 -----------
 
-Drop the `<TAP />` component with a `label` parameter.
+Drop the `<TAP />` component with a `label` (+ optionally `options`) parameter.
 
 JSX:
 ```javascript
 Meteor.startup(function() {
-  React.render(<TAP label="fields.lastName" />, document.body);
+  React.render(<TAP label="messages.welcome" options={ liked: 'React' }/>, document.body);
 });
 ```
 
 en.i18n.json:
 ```json
 {
-  "fields": {
-    "lastName": "Last name"
+  "messages": {
+    "welcome": "I like __liked__ !"
   }
 }
 ```
@@ -34,8 +34,8 @@ en.i18n.json:
 fr.i18n.json:
 ```json
 {
-  "fields": {
-    "lastName": "Nom de famille"
+  "messages": {
+    "welcome": "J'aime __liked__ !"
   }
 }
 ```
