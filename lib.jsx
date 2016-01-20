@@ -6,6 +6,6 @@ TAP = React.createClass({
     };
   },
   render() {
-    return <span>{this.data.text}</span>
+    return <span className={this.props.className}>{this.data.text}</span>
   }
 });
